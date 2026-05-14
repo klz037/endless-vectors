@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#08111f] text-white;
+    font-family: Inter, Arial, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Glow blobs used in the Hero section */
+  .glow-cyan {
+    background: rgba(34, 211, 238, 0.2);
+    filter: blur(80px);
+  }
+
+  .glow-indigo {
+    background: rgba(99, 102, 241, 0.18);
+    filter: blur(80px);
+  }
+
+  /* Glassmorphism card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Dark inset panel */
+  .dark-inset {
+    background: rgba(8, 17, 31, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  /* Science card: default dark */
+  .science-card {
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Science card: lead (cyan tinted) */
+  .science-card-lead {
+    background: linear-gradient(
+      145deg,
+      rgba(103, 232, 249, 0.18),
+      rgba(15, 23, 42, 0.76)
+    );
+    border: 1px solid rgba(103, 232, 249, 0.32);
+  }
+
+  /* Workflow step row */
+  .workflow-box {
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Band background (science section) */
+  .band-bg {
+    background: rgba(255, 255, 255, 0.035);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Sticky nav blur */
+  .nav-blur {
+    background: rgba(8, 17, 31, 0.92);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+  }
+
+  /* Cyan badge */
+  .cyan-badge {
+    color: #cffafe;
+    border: 1px solid rgba(103, 232, 249, 0.35);
+    background: rgba(103, 232, 249, 0.1);
+  }
+
+  /* Check item row */
+  .check-item {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Icon box */
+  .icon-box {
+    background: rgba(103, 232, 249, 0.14);
+    color: #67e8f9;
+  }
+}
